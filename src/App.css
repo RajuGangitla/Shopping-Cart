@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(101, 159, 210);
+    position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+    padding: 30px;
+    font-size: 28px;
+    font-family: cursive;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon{
+    padding: 30px;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.icon svg{
+    font-size: 30px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+sup{
+    font-size: 18px;
+    background-color: red;
+    width: 13px;
+    margin-top: -5px;
+    border-radius: 7px;
+    position: absolute;
+}
+
+.icon1{
+    font-size: 13px !important;
+}
+
+section{
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.card{
+    width: 250px;
+    padding: 20px;
+}
+
+.card:hover{
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.3);
+}
+
+.cardImage img{
+    width: 150px;
+    height: 200px;
+}
+
+.cardDetails p:nth-child(1){
+    font-weight: bold;
+    padding: 4px;
+    font-size: 18px;
+}
+
+.cardDetails p:nth-child(2){
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.cardDetails p:nth-child(3){
+    font-weight: bold;
+    color: gray;
+    padding: 5px;
+}
+
+.cardDetails button{
+    padding: 5px 10px;
+    border: none;
+    font-weight: bold;
+    background-color: skyblue;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.warning{
+    height: 40px;
+    width: 250px;
+    position: absolute;
+    right: 0;
+    top: 14%;
+    background-color: rgb(210, 91, 91);
+    font-size: 1.1rem;
+    color: white;
+    font-family: cursive;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+article{
+    width: 60%;
+    margin: auto;
+}
+.cart_box img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+.cart_img{
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+.cart_img p {
+    font-weight: bold;
+    padding: 3px;
+    margin-left: 10px;
+}
+.cart_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 2px solid skyblue;
+    padding-bottom: 5px;
+}
+.cart_box div:nth-child(2) button{
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin-right: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.cart_box div:nth-child(3) button{
+    padding: 5px 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border:none;
+    outline: none;
+    color: white;
+    background-color: skyblue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cart_box div:nth-child(2) button:hover{
+    background-color: rgb(137, 242, 137);
+}
+.cart_box div:nth-child(3) button:hover{
+    background-color: rgb(89, 248, 89);
+}
+.cart_box div:nth-child(3) span{
+    background-color: lightgreen;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+.total span:nth-child(1){
+    font-size: 2rem;
+    color: skyblue;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.total span:nth-child(2){
+    font-size: 2rem;
+    color: green;
+    font-weight: bold;
 }
